@@ -1,0 +1,61 @@
+连接
+git remote add origin git@github.com:DesignDer/learngit.git
+git@github.com:caiyaodeng/CYDFileSystem.git
+本地库的所有内容推送到远程库
+git push -u origin master
+
+查询sshkey
+ssh-keygen -t rsa -C "956608008@qq.com"
+
+远程库克隆
+git clone git@github.com:DesignDer/gitskills.git
+git clone git@github.com:DesignDer/learngit.git
+
+合并
+创建dev分支
+git checkout -b dev
+= git branch dev
+  git checkout dev
+
+查看当前分支、当前分支前面会标一个*号
+git branch
+
+输入文件内容并提交
+git add readme.txt 
+git commit -m " "
+
+切换回master分支
+git checkout master
+
+dev分支的工作成果合并到master分支
+git merge dev
+
+删除dev分支
+git branch -D dev
+
+查看branchgit diff HEAD -- readme.txt
+git branch
+
+
+
+解决合并冲突
+创建feature分支
+git checkout -b feature
+
+修改并提交add commit
+
+切换到master分支
+git checkout master
+
+再次修改并提交add 想commit
+
+修改合并
+git merge feature
+
+cat查看文件并修改文件并提交add commit
+
+用带参数的git log也可以看到分支的合并情况
+git log --graph --pretty=oneline --abbrev-commit
+
+删除分支
+git branch -D feature
